@@ -1,0 +1,37 @@
+
+mengalihkan kesalahan(exeption)
+
+Tkinter
+untuk aplikasi GUI membuat komponennya semua coding
+manggil modul python GUI dengan Tkinter
+ingin memanggil atribut, class, method
+
+import tkinter
+from tkinter import *(token)
+
+step :
+1. import module tkinter
+2. buat main window(container)
+3. tambahkan beberapa widget
+4. terapkan event trigger(diakibatkan oleh user)
+
+
+- tkinter punya akses konfigurasi ke geometrik widget
+- geometrik widget: mengatur widget diparent window
+	3 class:
+	1. method pack() : mengatur widget diblok sebelum menempatkan widget
+	2. Method grid() : mengatur widget digrid
+	3. method place() : mengatur widget by position
+	
+1. Button
+	- BU : w=Button9mastermoption=value)
+	- Master : parameter untuk representasi parent window
+	- Format button dapat dirubah dengan sejumlah opsi, jumlah opsi diteruskan sebagai parameter dipisahkan dengan koma
+	- Activebackground : untuk atur warna background kl button dibawah kursor
+	- Foreground : warna foreground saat button berada dibawah kursor 
+	- Title : judul
+	- Bd : lebar border dalam piksel
+	- Cursor : kursor kanvas
+	- highlightcolor : setting warna dalam sorotan fokus
+	- width : lebar
+	- height : tinggi
