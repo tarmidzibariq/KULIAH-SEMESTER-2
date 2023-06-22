@@ -1,0 +1,25 @@
+public class BujurSangkar {
+    private double sisi;
+    
+    // Constructor pertama
+    public BujurSangkar() {
+        sisi = 0.0;
+    }
+    
+    // Constructor kedua
+    public BujurSangkar(double sisi) {
+        this.sisi = sisi;
+    }
+    
+    public void setSisi(double panjang) {
+        sisi = panjang;
+    }
+    
+    public double getSisi() {
+        return sisi;
+    }
+    
+    public double getLuas() {
+        return sisi * sisi;
+    }
+}

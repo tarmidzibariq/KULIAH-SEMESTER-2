@@ -1,0 +1,41 @@
+public class RekeningBank {
+    private static int noRekTerakhir = 1000; // [1] Field static untuk merekam nomor rekening terakhir
+    private int nomorRekening; // [2] Field instance untuk menyimpan nomor rekening
+    private double saldo;
+
+    public RekeningBank() {
+        noRekTerakhir++; // [3] Increment nomor rekening terakhir
+        nomorRekening = noRekTerakhir; // [3] Tetapkan nomor rekening berdasarkan nomor rekening terakhir
+        saldo = 0.0;
+    }
+
+    public RekeningBank(double saldoAwal) {
+        noRekTerakhir++; // [3] Increment nomor rekening terakhir
+        nomorRekening = noRekTerakhir; // [3] Tetapkan nomor rekening berdasarkan nomor rekening terakhir
+        saldo = saldoAwal;
+    }
+
+    public void deposit(double jumlah) {
+        saldo += jumlah;
+    }
+
+    public void withdraw(double jumlah) {
+        if (saldo >= jumlah) {
+            saldo -= jumlah;
+        } else {
+            System.out.println("Dana tidak mencukupi.");
+        }
+    }
+
+    public void setSaldo(double s) {
+        saldo = s;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public int getNomorRekening() {
+        return nomorRekening; // [4] Method untuk mengembalikan nomor rekening
+    }
+}

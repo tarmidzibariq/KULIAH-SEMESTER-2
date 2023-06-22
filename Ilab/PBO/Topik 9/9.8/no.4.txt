@@ -1,0 +1,24 @@
+public class Buku implements BarangRitel {
+    private String judul;
+    private String pengarang;
+    private double hargaRitel;
+
+    public Buku(String judul, String pengarang, double hargaRitel) {
+        this.judul = judul;
+        this.pengarang = pengarang;
+        this.hargaRitel = hargaRitel;
+    }
+
+    public String getJudul() {
+        return judul;
+    }
+
+    public String getPengarang() {
+        return pengarang;
+    }
+
+    @Override
+    public double getHargaRitel() {
+        return hargaRitel;
+    }
+}

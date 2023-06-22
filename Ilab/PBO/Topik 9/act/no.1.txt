@@ -1,0 +1,14 @@
+public class PegawaiHonorer extends Pegawai {
+    private double honorPerJam;
+    private double jamKerja;
+
+    public PegawaiHonorer(String nama, double gajiPokok, double jamKerja) {
+        super(nama, gajiPokok);
+        this.jamKerja = jamKerja;
+        this.honorPerJam = gajiPokok;
+    }
+    @Override
+    public double getGaji() {
+        return honorPerJam * jamKerja;
+    }
+}

@@ -1,0 +1,22 @@
+public class Geometri {
+    public static double luasLingkaran(double r) {
+        if (r < 0) {
+            throw new IllegalArgumentException("radius tidak boleh negatif");
+        }
+        return Math.PI * r * r;
+    }
+
+    public static double luasPersegiPanjang(double p, double l) {
+        if (p < 0 || l < 0) {
+            throw new IllegalArgumentException("panjang dan lebar tidak boleh negatif");
+        }
+        return p * l;
+    }
+
+    public static double luasSegitiga(double a, double t) {
+        if (a < 0 || t < 0) {
+            throw new IllegalArgumentException("alas dan tinggi tidak boleh negatif");
+        }
+        return 0.5 * a * t;
+    }
+}

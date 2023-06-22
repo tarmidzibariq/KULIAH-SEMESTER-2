@@ -1,0 +1,42 @@
+public class RekeningBank
+{
+    private String nomorRekening;
+    private double saldo;
+    
+    public RekeningBank(String nomorRekening, double saldo)
+    {
+        this.nomorRekening = nomorRekening;
+        this.saldo = saldo;
+    }
+    
+    public String getNomorRekening()
+    {
+        return nomorRekening;
+    }
+    
+    public double getSaldo()
+    {
+        return saldo;
+    }
+    
+    // [1] Tambahkan method toString di bawah.
+    @Override
+    public String toString() {
+        return nomorRekening + ", " + saldo;
+    }
+
+
+
+// [2] Tambahkan method equals di bawah.
+     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        RekeningBank other = (RekeningBank) obj;
+        return nomorRekening.equals(other.nomorRekening) && saldo == other.saldo;
+    }
+}

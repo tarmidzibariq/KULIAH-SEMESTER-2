@@ -1,0 +1,10 @@
+public class Kucing extends Hewan {
+    public Kucing() {
+        super(4); // Memanggil constructor superclass dengan jumlahKaki = 4
+    }
+
+    @Override
+    public void bersuara() {
+        System.out.println("Meong...");
+    }
+}
